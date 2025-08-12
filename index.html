@@ -15,9 +15,21 @@
 <form name="logIn" method="post">
     UserName:<input type="text" name="userName" placeholder="Enter the owner username" id="userName" required></br>
     Password:<input type="password" name="password" id="password" placeholder="Enter the owner password" required></br>
-    <input type="submit" value="logIn" onsubmit="ownerLogIn()">
+    <button onclick="userLogIn()">login</button>
 </form>
+        <style>
+            body{
+                background-color:grey;
+            }
+            input{
+                color:blue;
+                border-radius:1px;
+                display:flex;
+                
+            }
+        </style>
     </body>
 
 </html>
+
 
