@@ -11,12 +11,14 @@
     </head>
     <body>
         <!---Log in as the owner of this website-->
-        <h1>LOG IN</h1>
+        <h1 style="color:red;">Do not try to log in if you are not the owner</h1>
+        <div id="form">
 <form name="logIn" method="post">
     UserName:<input type="text" name="userName" placeholder="Enter the owner username" id="userName" required></br>
     Password:<input type="password" name="password" id="password" placeholder="Enter the owner password" required></br>
-    <button onclick="userLogIn()">login</button>
+    <button id="log" onclick="userLogIn()">login</button>
 </form>
+        </div>
         <style>
             body{
                 background-color:grey;
@@ -27,9 +29,22 @@
                 display:flex;
                 
             }
+            #log{
+                background-color:blue;
+                color:orange;
+                
+            }
+            #form{
+                display:flex;
+                background-color:blue;
+                border-radius:5px;
+                justfy-content:center;
+                align-items:centre;
+            }
         </style>
     </body>
 
 </html>
+
 
 
