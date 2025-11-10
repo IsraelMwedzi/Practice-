@@ -7,92 +7,19 @@
         <meta name="keywords" content="Israel Mwedzi">
         <link rel="stylesheet" href="index.css">
         <style src="index.js"></style>
-        <tittle>log in</tittle>
+        <tittle></tittle>
     </head>
     <body>
-        <!---Log in as the owner of this website-->
-        <h1 style="color:red;">DO NOT TRY TO LOG IN IF YOU ARE NOT THE OWNER</h1>
-        <div id="form">
-<form name="logIn" method="post">
-    UserName:<input type="text" name="userName" placeholder="Enter the owner username" id="userName" required></br>
-    Password:<input type="password" name="password" id="password" placeholder="Enter the owner password" required></br>
-    <button id="log" onclick="userLogIn()">login</button>
-</form>
-        </div>
-        <style>
-            body{
-                background-color:grey;
-            }
-            input{
-                color:blue;
-                border-radius:1px;
-                display:flex;
-                justfy-content:center;
-                align-items:centre;
-                
-            }
-            .log{
-                background-color:blue;
-                color:orange;
-                
-            }
-            #form{
-                display:flex;
-                background-color:green;
-                border-radius:5px;
-                justfy-content:center;
-                align-items:centre;
-            }
-            #log{
-                justfy-content:center;
-                align-items:centre;
-                
-                
-            }
-            #contact{
-                display:flex;
-                background-color:black;
-                border-radius:5px;
-                justfy-content:center;
-                align-items:centre;
-            }
-            #WhatsApp{
-                display:flex;
-                background-color:red;
-                border-radius:1px;
-                justfy-content:center;
-                align-items:centre;
-                color:white;
-            }
-            #email{
-                display:flex;
-                background-color:red;
-                border-radius:1px;
-                justfy-content:center;
-                align-items:centre;
-                color:white;
-            }
-            
-        </style>
-        <script>
-            //Owner log in
-            function userLogIn(){
-                const password = document.getElementById("password");
+<div id="Welcome">
+        <h1 style="color:red;"><b><i>WELCOME TO VELOXA FX</i></i></b></b></h1>
+</div>
 
-                if(password != "#@Easz2006"){
-                    alert("Please put the owner password to enter into the system")
-                }
-                
-            }
-            //contact the owner
-            //functiton contact(){
-             //   open("https://wa.me//+263773623932//")
-           // }
-        </script>
+        
         <footer>
         <div id="contact" >  
                    <button id="WhatsApp">"<a href="https://wa.me/+263773623932">Contact us on WhatsApp</a></button> 
                    <button id="email"><a href="mailto:israelmwedzi28@gmail.com">Contact us on our Email</a></div></button> 
+            <button id="about" onclick="about()">ABOUT US</button>
         </div> 
         
         
@@ -102,6 +29,7 @@
     </body>
 
 </html>
+
 
 
 
