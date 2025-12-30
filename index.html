@@ -11,13 +11,85 @@
     </head>
     <body>
 <div class="Welcome">
-        <h1 style="color:red;"><b><i>WELCOME TO VELOXA FX</i></i></b></b></h1>
+        <h1 style="color:red;"><b><i>Do not try to log in if you are not the Owner </i></i></b></b></h1>
 </div>
-          <style>
-              .welcome{
-                 backgroung-image:/Screenshot(1).png; 
-              }
-          </style>
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .login-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <div class="error-message" id="error-message">Invalid username or password</div>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Simple validation for demo purposes
+        if (username === 'admin' && password === 'password') {
+            alert('Login successful!');
+            // You can add logic here to redirect to another page or update the UI
+        } else {
+            document.getElementById('error-message').style.display = 'block';
+        }
+    });
+</script>
+
+</body>
+    </html>
         
         <footer>
         <div id="contact" >  
@@ -33,6 +105,7 @@
     </body>
 
 </html>
+
 
 
 
